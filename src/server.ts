@@ -4,10 +4,8 @@ import express from 'express'
 const app = express()
 const PORT = 3000
 
-// ルートエンドポイントの定義
-app.get('/', (req, res) => {
-  res.send('Hello, Express & TypeScript!')
-})
+// リソースの読み込み
+app.use(express.static('public'))
 
 // サーバ起動
 app.listen(PORT, () => {
