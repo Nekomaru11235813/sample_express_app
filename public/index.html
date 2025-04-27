@@ -4,9 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>TODOリスト</title>
 </head>
 <body>
-  <h1>Hello Express on HTML!</h1>
+  <div class="container">
+    <h1 class="title">TODOリスト</h1>
+    <div class="input-area">
+      <input type="text" id="todo-input" placeholder="TODOを入力">
+      <button id="add-todo">追加</button>
+      <button id="clear-todo">クリア</button>
+    </div>
+    <p id="warning" class="warning"></p>
+    <ul id="todo-list" class="todo-list">
+      <li>TODO1</li>
+      <li>TODO2</li>
+      <li>TODO3</li>
+    </ul>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
