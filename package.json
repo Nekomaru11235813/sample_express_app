@@ -1,5 +1,5 @@
 {
-    "name": "pr_cli",
+    "name": "sample_express_app",
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
