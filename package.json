@@ -7,7 +7,8 @@
         "build": "tsc",
         "test": "jest",
         "lint": "npx eslint src/**/*.ts",
-        "lint-fix": "eslint src/**/*.ts --fix && prettier --write src/**/*.ts "
+        "lint-fix": "eslint src/**/*.ts --fix && prettier --write src/**/*.ts ",
+        "serve": "npm run build && node dist/server.js"   
     },
     "keywords": [],
     "author": "blood",
@@ -15,6 +16,7 @@
     "description": "",
     "devDependencies": {
         "@eslint/js": "^9.25.1",
+        "@types/express": "^5.0.1",
         "@types/jest": "^29.5.14",
         "@types/node": "^22.15.2",
         "@typescript-eslint/eslint-plugin": "^8.31.0",
@@ -40,6 +42,7 @@
         ]
     },
     "dependencies": {
+        "express": "^5.1.0",
         "ts-jest": "^29.3.2"
     }
 }
